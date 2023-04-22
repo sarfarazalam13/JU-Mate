@@ -29,6 +29,20 @@
         android:theme="@style/Theme.JUMate"
         tools:targetApi="31">
         <activity
+            android:name=".dispensarysection"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".stationarysection"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".academics"
             android:exported="false">
             <meta-data
