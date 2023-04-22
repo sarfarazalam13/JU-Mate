@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JU mate</string>
+    <string name="title_activity_neaby_maps">NeabyMaps</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="toggle_flash">Toggle Flash</string>
+    <string name="action_settings">Settings</string>
+    <string name="scanned_data">Scanned Data</string>
+</resources>

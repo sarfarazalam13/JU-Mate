@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".courses">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-31dp"
+        tools:layout_editor_absoluteY="106dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="-88dp">
+
+            <TextView
+                android:layout_width="411dp"
+                android:layout_height="121dp"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="E-books"
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                android:background="@drawable/custom_button"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="-3dp">
+
+            </TextView>
+
+            <GridLayout
+                android:layout_width="356dp"
+                android:layout_height="681dp"
+                android:layout_margin="23dp"
+                android:layout_weight="7"
+                android:columnCount="2"
+                android:rowCount="3"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="149dp">
+
+
+                <Button
+                    android:id="@+id/dsa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_button"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="DSA"
+                    android:textSize="20dp"
+                    tools:layout_editor_absoluteX="252dp"
+                    tools:layout_editor_absoluteY="308dp" />
+
+                <Button
+                    android:id="@+id/sepm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_button"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="SEPM"
+                    android:textSize="20dp"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="308dp" />
+
+                <Button
+                    android:id="@+id/aiml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="AI/ML"
+                    android:textSize="20dp"
+                    android:background="@drawable/custom_button"
+                    android:textColor="@color/white"
+                    tools:layout_editor_absoluteX="264dp"
+                    tools:layout_editor_absoluteY="237dp" />
+
+                <Button
+                    android:id="@+id/java"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_button"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="JAVA"
+                    android:textSize="20dp"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="246dp" />
+
+                <Button
+                    android:id="@+id/c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_button"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="C/C++"
+                    android:textSize="20dp"
+                    tools:layout_editor_absoluteX="236dp"
+                    tools:layout_editor_absoluteY="171dp" />
+
+                <Button
+                    android:id="@+id/os"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/custom_button"
+                    android:textColor="@color/white"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="OS"
+                    android:textSize="20dp"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="171dp" />
+
+                <Button
+                    android:id="@+id/ch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_button"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="C#"
+                    android:textSize="20dp"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="171dp" />
+
+                <Button
+                    android:id="@+id/python"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_button"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="PYTHON"
+                    android:textSize="20dp"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="171dp" />
+                <Button
+                    android:id="@+id/dbms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_button"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="DBMS"
+                    android:textSize="20dp"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="171dp" />
+                <Button
+                    android:id="@+id/cg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_button"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="CG"
+                    android:textSize="20dp"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="171dp" />
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

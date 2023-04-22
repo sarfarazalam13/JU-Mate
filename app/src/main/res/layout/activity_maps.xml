@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    tools:layout="@layout/support_simple_spinner_dropdown_item" />
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="10dp"
+        android:background="@color/white">
+
+
+
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/food"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:text="FOOD"
+                android:textSize="20dp"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/stationary"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:text="Stationary"
+                android:textSize="20dp"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/grocery"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:text="Grocery"
+                android:textSize="20dp"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/medical"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:text="Medical"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/clothing"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:text="NA"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/tea"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:text="NA"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>
