@@ -15,10 +15,6 @@
     tools:context=".MapsActivity"
     tools:layout="@layout/support_simple_spinner_dropdown_item" />
 
-
-
-
-
     <RelativeLayout
         android:id="@+id/search"
         android:layout_width="match_parent"
@@ -28,9 +24,6 @@
         android:layout_marginLeft="10dp"
         android:elevation="10dp"
         android:background="@color/white">
-
-
-
     </RelativeLayout>
     <HorizontalScrollView
         android:layout_width="match_parent"
