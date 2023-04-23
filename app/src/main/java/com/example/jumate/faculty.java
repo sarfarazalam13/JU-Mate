@@ -65,7 +65,7 @@ public class faculty extends AppCompatActivity {
 
     private void createExampleList() {
         mExampleList = new ArrayList<>();
-        mExampleList.add(new ExampleItem(R.drawable.blank,"sarfaraz"));
+        mExampleList.add(new ExampleItem(R.drawable.blank,"Mr.Naveen Hemrajani"));
         mExampleList.add(new ExampleItem(R.drawable.blank, "Dr. Shashi Sharma"));
         mExampleList.add(new ExampleItem(R.drawable.blank, "Dr. Bhavna Sharma"));
         mExampleList.add(new ExampleItem(R.drawable.blank, "Dr. Gajanand Sharma"));

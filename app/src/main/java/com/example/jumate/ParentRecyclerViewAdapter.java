@@ -57,62 +57,62 @@ public class ParentRecyclerViewAdapter extends RecyclerView.Adapter<ParentRecycl
 
         // added the first child row
         if (parentModelArrayList.get(position).movieCategory().equals("Computer Science")) {
-            arrayList.add(new ChildModel(R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel(R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
+            arrayList.add(new ChildModel(R.drawable.blank,"DSA"));
+            arrayList.add(new ChildModel(R.drawable.blank,"Java"));
+            arrayList.add(new ChildModel( R.drawable.blank,"C++"));
+            arrayList.add(new ChildModel( R.drawable.blank,"OS"));
+            arrayList.add(new ChildModel( R.drawable.blank,"CN"));
+            arrayList.add(new ChildModel( R.drawable.blank,"CC"));
         }
 
         // added in second child row
         if (parentModelArrayList.get(position).movieCategory().equals("Civil")) {
-            arrayList.add(new ChildModel(R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel(R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
+            arrayList.add(new ChildModel(R.drawable.blank,"Electronics"));
+            arrayList.add(new ChildModel(R.drawable.blank,"physics"));
+            arrayList.add(new ChildModel( R.drawable.blank,"CAD"));
+            arrayList.add(new ChildModel( R.drawable.blank,"Chemistry"));
+            arrayList.add(new ChildModel( R.drawable.blank,"Mechanics"));
+            arrayList.add(new ChildModel( R.drawable.blank,"physics"));
         }
 
         // added in third child row
         if (parentModelArrayList.get(position).movieCategory().equals("Mechanical")) {
-            arrayList.add(new ChildModel(R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel(R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
+            arrayList.add(new ChildModel(R.drawable.blank,"Fluid Machinery"));
+            arrayList.add(new ChildModel(R.drawable.blank,"heat transfer"));
+            arrayList.add(new ChildModel( R.drawable.blank,"Machine Drawing"));
+            arrayList.add(new ChildModel( R.drawable.blank,"workshop"));
+            arrayList.add(new ChildModel( R.drawable.blank,"Robotics"));
+            arrayList.add(new ChildModel( R.drawable.blank,"CAD"));
         }
 
         // added in fourth child row
         if (parentModelArrayList.get(position).movieCategory().equals("Electrical")) {
-            arrayList.add(new ChildModel(R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel(R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
+            arrayList.add(new ChildModel(R.drawable.blank,"Electromechanics."));
+            arrayList.add(new ChildModel(R.drawable.blank,"Circuit Theory"));
+            arrayList.add(new ChildModel( R.drawable.blank,"Physical Electronics"));
+            arrayList.add(new ChildModel( R.drawable.blank,"Computer Vision"));
+            arrayList.add(new ChildModel( R.drawable.blank,"Soft Computing"));
+            arrayList.add(new ChildModel( R.drawable.blank,"VLSI Technology"));
         }
 
         // added in fifth child row
         if (parentModelArrayList.get(position).movieCategory().equals("MBA")) {
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
+            arrayList.add(new ChildModel( R.drawable.blank,"Marketing."));
+            arrayList.add(new ChildModel( R.drawable.blank,"HR management."));
+            arrayList.add(new ChildModel( R.drawable.blank,"Business planning."));
+            arrayList.add(new ChildModel( R.drawable.blank,"Entrepreneurship."));
+            arrayList.add(new ChildModel( R.drawable.blank,"Business laws."));
+            arrayList.add(new ChildModel( R.drawable.blank,"Communication skills"));
         }
 
         // added in sixth child row
         if (parentModelArrayList.get(position).movieCategory().equals("Design")) {
-            arrayList.add(new ChildModel(R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Movie Name"));
-            arrayList.add(new ChildModel(R.drawable.blank,"Movie Name"));
+            arrayList.add(new ChildModel(R.drawable.blank,"Ergonomics."));
+            arrayList.add(new ChildModel( R.drawable.blank,"Form Studies"));
+            arrayList.add(new ChildModel( R.drawable.blank,"Graphic Design."));
+            arrayList.add(new ChildModel( R.drawable.blank,"Basic of Design."));
+            arrayList.add(new ChildModel( R.drawable.blank,"Design Methods"));
+            arrayList.add(new ChildModel(R.drawable.blank,"Visual Design"));
         }
 
         ChildRecyclerViewAdapter childRecyclerViewAdapter = new ChildRecyclerViewAdapter(arrayList,holder.childRecyclerView.getContext());
