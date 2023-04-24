@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent=new Intent(MainActivity.this,academics.class);
                         startActivity(intent);
                     }
-                   /* else if(final1==1)
+                   else if(final1==1)
                     {
-                       // Intent intent=new Intent(MainActivity.this,cafeteriasection.class);
+                       Intent intent=new Intent(MainActivity.this,Cafetaria.class);
                         startActivity(intent);
-                    }*/
+                    }
                     else if(final1==2)
                     {
                         Intent intent=new Intent(MainActivity.this,merchandisesection.class);

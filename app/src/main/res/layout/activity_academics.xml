@@ -15,155 +15,149 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         android:id="@+id/navi"
-        app:headerLayout="@layout/header_layout"/>
+        app:headerLayout="@layout/header_layout">
 
-    <LinearLayout
+
+    </com.google.android.material.navigation.NavigationView>
+      <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="12"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="38dp">
 
-        <TextView
+          <GridLayout
+              android:layout_width="match_parent"
+              android:layout_height="494dp"
+              android:layout_margin="25dp"
+              android:layout_weight="17"
+              android:columnCount="2"
+              android:rowCount="3">
+
+
+              <Button
+                  android:id="@+id/Courses"
+                  android:layout_width="wrap_content"
+                  android:layout_height="0dp"
+                  android:layout_rowWeight="1"
+                  android:layout_columnWeight="1"
+                  android:layout_margin="5dp"
+                  android:background="@drawable/custom_button"
+                  android:gravity="center"
+                  android:text="Courses"
+                  android:textColor="@color/white"
+                  android:textSize="20dp" />
+
+              <Button
+                  android:id="@+id/ebook"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_rowWeight="1"
+                  android:layout_columnWeight="1"
+                  android:layout_margin="5dp"
+                  android:background="@drawable/custom_button"
+                  android:gravity="center"
+                  android:text="E-Book"
+                  android:textColor="@color/white"
+                  android:textSize="20dp" />
+
+              <Button
+                  android:id="@+id/fee"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_rowWeight="1"
+                  android:layout_columnWeight="1"
+                  android:layout_margin="5dp"
+                  android:background="@drawable/custom_button"
+                  android:gravity="center"
+                  android:text="PAY Fee"
+                  android:textColor="@color/white"
+                  android:textSize="20dp" />
+
+              <Button
+                  android:id="@+id/contacts"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_rowWeight="1"
+                  android:layout_columnWeight="1"
+                  android:layout_margin="5dp"
+                  android:background="@drawable/custom_button"
+                  android:gravity="center"
+                  android:text="Contact"
+                  android:textColor="@color/white"
+                  android:textSize="20dp" />
+
+              <Button
+                  android:id="@+id/acadamiccalander"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_rowWeight="1"
+                  android:layout_columnWeight="1"
+                  android:layout_margin="5dp"
+                  android:background="@drawable/custom_button"
+                  android:gravity="center"
+                  android:text="Calander"
+                  android:textColor="@color/white"
+                  android:textSize="20dp" />
+
+              <Button
+                  android:id="@+id/qr"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_rowWeight="1"
+                  android:layout_columnWeight="1"
+                  android:layout_margin="5dp"
+                  android:background="@drawable/custom_button"
+                  android:gravity="center"
+                  android:text="QR"
+                  android:textColor="@color/white"
+                  android:textSize="20dp" />
+
+              <Button
+                  android:id="@+id/campus"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_rowWeight="1"
+                  android:layout_columnWeight="1"
+                  android:layout_margin="5dp"
+                  android:background="@drawable/custom_button"
+                  android:gravity="center"
+                  android:text="Campus"
+                  android:textColor="@color/white"
+                  android:textSize="20dp" />
+
+              <Button
+                  android:id="@+id/empty"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_rowWeight="1"
+                  android:layout_columnWeight="1"
+                  android:layout_margin="5dp"
+                  android:background="@drawable/custom_button"
+                  android:gravity="center"
+                  android:text="Empty"
+                  android:textColor="@color/white"
+                  android:textSize="20dp" />
+
+          </GridLayout>
+
+          <TextView
+              android:layout_width="346dp"
+              android:layout_height="wrap_content"
+              android:layout_rowWeight="1"
+              android:layout_gravity="center"
+              android:layout_margin="10dp"
+              android:layout_weight="1"
+              android:padding="5dp"
+              android:text="      LINKS"
+              android:textColor="@color/black"
+              android:textSize="25dp">
+
+          </TextView>
+
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="     FEAT."
-            android:textColor="@color/black"
-            android:textSize="25dp">
-
-        </TextView>
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_margin="25dp"
-            android:layout_weight="9"
-            android:columnCount="2"
-            android:rowCount="3">
-
-
-            <Button
-                android:id="@+id/Courses"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:text="Courses"
-                android:textColor="@color/white"
-                android:background="@drawable/custom_button"
-                android:textSize="20dp" />
-
-            <Button
-                android:id="@+id/ebook"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                android:background="@drawable/custom_button"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:text="E-Book"
-                android:textSize="20dp" />
-
-            <Button
-                android:id="@+id/fee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:background="@drawable/custom_button"
-                android:textColor="@color/white"
-                android:text="PAY Fee"
-                android:textSize="20dp" />
-
-            <Button
-                android:id="@+id/contacts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:background="@drawable/custom_button"
-                android:textColor="@color/white"
-                android:text="Contact"
-                android:textSize="20dp" />
-
-            <Button
-                android:id="@+id/acadamiccalander"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:background="@drawable/custom_button"
-                android:textColor="@color/white"
-                android:text="Calander"
-                android:textSize="20dp" />
-
-            <Button
-                android:id="@+id/qr"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:background="@drawable/custom_button"
-                android:textColor="@color/white"
-                android:text="QR"
-                android:textSize="20dp" />
-            <Button
-                android:id="@+id/campus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:background="@drawable/custom_button"
-                android:textColor="@color/white"
-                android:text="Campus"
-                android:textSize="20dp" />
-            <Button
-                android:id="@+id/empty"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:background="@drawable/custom_button"
-                android:textColor="@color/white"
-                android:text="Empty"
-                android:textSize="20dp" />
-
-        </GridLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:padding="5dp"
-            android:layout_gravity="center"
-            android:text="      LINKS"
-            android:textColor="@color/black"
-            android:textSize="25dp">
-
-        </TextView>
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
             android:layout_margin="25dp"
             android:layout_weight="1"
             android:columnCount="2"
@@ -177,11 +171,11 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="5dp"
+                android:background="@drawable/custom_button"
                 android:gravity="center"
                 android:minHeight="48dp"
-                android:background="@drawable/custom_button"
-                android:textColor="@color/white"
                 android:text="ERP"
+                android:textColor="@color/white"
                 android:textSize="20dp"
                 tools:ignore="TouchTargetSizeCheck" />
 
@@ -192,10 +186,10 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="5dp"
+                android:background="@drawable/custom_button"
                 android:gravity="center"
                 android:minHeight="48dp"
                 android:text="Parents Portal"
-                android:background="@drawable/custom_button"
                 android:textColor="@color/white"
                 android:textSize="20dp" />
 
