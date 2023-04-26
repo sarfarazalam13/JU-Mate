@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent=new Intent(MainActivity.this,studentsection.class);
                         startActivity(intent);
                     }
+
                     else
                     {
                         Toast.makeText(MainActivity.this,"NO Items",Toast.LENGTH_SHORT).show();

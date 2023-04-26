@@ -96,7 +96,7 @@
                   android:layout_margin="5dp"
                   android:background="@drawable/custom_button"
                   android:gravity="center"
-                  android:text="Calander"
+                  android:text="Calendar"
                   android:textColor="@color/white"
                   android:textSize="20dp" />
 

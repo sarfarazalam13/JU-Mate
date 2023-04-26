@@ -17,7 +17,7 @@ public class  academics extends AppCompatActivity implements View.OnClickListene
     Button Contact;
     Button fee;
     Button QR;
-
+   Button calendar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +29,7 @@ public class  academics extends AppCompatActivity implements View.OnClickListene
         Maps=(Button)findViewById(R.id.campus);
         Contact=(Button)findViewById(R.id.contacts);
         fee=(Button)findViewById(R.id.fee);
+        calendar=(Button)findViewById(R.id.acadamiccalander);
 
 
         fee.setOnClickListener(new View.OnClickListener() {
@@ -67,6 +68,12 @@ public class  academics extends AppCompatActivity implements View.OnClickListene
                 openEbooks();
             }
         });
+        calendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opencalendar();
+            }
+        });
 
         ERP.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,6 +109,10 @@ public class  academics extends AppCompatActivity implements View.OnClickListene
     private void gotoUrl(String s) {
         Uri uri=Uri.parse(s);
         startActivity(new Intent(Intent.ACTION_VIEW,uri));
+    }
+    private void opencalendar() {
+        Intent intent=new Intent(this,calendarsection.class);
+        startActivity(intent);
     }
 
     public void openCourses()
