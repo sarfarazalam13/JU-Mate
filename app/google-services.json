@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "356913761175",
+    "project_id": "calendar-99956",
+    "storage_bucket": "calendar-99956.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356913761175:android:7a2541b6350809f49952d2",
+        "android_client_info": {
+          "package_name": "com.example.jumate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356913761175-lps4eqgfbfmt1iv3h3oc0tffg3mmasqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jumate",
+            "certificate_hash": "9b33034e342ebf92f40c4fbac56527cef4969693"
+          }
+        },
+        {
+          "client_id": "356913761175-gvj6smlk23h3fu86as6o6k0sv07bc4vo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyCWpP5u50Lt7UinIdhKAgescHnxj0jao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356913761175-gvj6smlk23h3fu86as6o6k0sv07bc4vo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
