@@ -9,12 +9,17 @@ import android.view.View;
 import android.widget.GridLayout;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
     GridLayout gl1;
+    FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mAuth=FirebaseAuth.getInstance();
         gl1=(GridLayout) findViewById(R.id.gl1);
         setSingleEvent(gl1);
     }
@@ -57,6 +62,19 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent=new Intent(MainActivity.this,studentsection.class);
                         startActivity(intent);
                     }
+                    else if(final1==6)
+                    {
+                        Intent intent=new Intent(MainActivity.this,MapsActivity.class);
+                        startActivity(intent);
+                    }
+                    else if(final1==7)
+                    {
+                        mAuth.signOut();
+                        Intent intent=new Intent(MainActivity.this,login.class);
+                        startActivity(intent);
+                        Toast.makeText(MainActivity.this,"Logged Out",Toast.LENGTH_SHORT).show();
+                    }
+
 
                     else
                     {
