@@ -1,10 +1,13 @@
 package com.example.jumate;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,11 +16,12 @@ public class  academics extends AppCompatActivity implements View.OnClickListene
     Button ERP;
     Button PP;
     Button Ebook;
-    Button Maps;
+    Button notice;
     Button Contact;
     Button fee;
     Button QR;
    Button calendar;
+    Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,13 +30,35 @@ public class  academics extends AppCompatActivity implements View.OnClickListene
         ERP=(Button) findViewById(R.id.erp);
         PP=(Button) findViewById(R.id.Parents);
         Ebook=(Button) findViewById(R.id.ebook);
-        Maps=(Button)findViewById(R.id.campus);
+        notice=(Button)findViewById(R.id.notice);
         Contact=(Button)findViewById(R.id.contacts);
         fee=(Button)findViewById(R.id.fee);
         calendar=(Button)findViewById(R.id.acadamiccalander);
+        toolbar=findViewById(R.id.academicstoolbar);
+        setSupportActionBar(toolbar);
+
+        if(getSupportActionBar()!=null)
+        {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+            getSupportActionBar().setTitle("Academics");
+
+        }
+
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+
+
 
 
         fee.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 gotoUrl("https://securepayments.payu.in/omni/JECRCU/");
@@ -49,10 +75,10 @@ public class  academics extends AppCompatActivity implements View.OnClickListene
 
 
 
-        Maps.setOnClickListener(new View.OnClickListener() {
+        notice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openmaps();
+                opennotice();
             }
         });
 
@@ -90,15 +116,13 @@ public class  academics extends AppCompatActivity implements View.OnClickListene
 
     }
 
-
     private void openfaculty() {
         Intent intent=new Intent(this,faculty.class);
         startActivity(intent);
     }
 
-    private void openmaps() {
-        Intent intent=new Intent(this,MapsActivity.class);
-        startActivity(intent);
+    private void opennotice() {
+
     }
 
     private void openEbooks() {

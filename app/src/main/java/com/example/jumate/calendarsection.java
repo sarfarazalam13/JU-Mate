@@ -81,7 +81,7 @@ public class calendarsection extends AppCompatActivity {
         if (!eventText.isEmpty()) {
             databaseRef.child(selectedDate).setValue(eventText);
         } else {
-           
+
             databaseRef.child(selectedDate).removeValue();
         }
     }
