@@ -36,6 +36,7 @@ public class  academics extends AppCompatActivity implements View.OnClickListene
         calendar=(Button)findViewById(R.id.acadamiccalander);
         toolbar=findViewById(R.id.academicstoolbar);
         setSupportActionBar(toolbar);
+        QR=findViewById(R.id.qr);
 
         if(getSupportActionBar()!=null)
         {
@@ -50,6 +51,14 @@ public class  academics extends AppCompatActivity implements View.OnClickListene
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+
+        QR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openqr();
             }
         });
 
@@ -114,6 +123,11 @@ public class  academics extends AppCompatActivity implements View.OnClickListene
             }
         });
 
+    }
+
+    private void openqr() {
+        Intent intent=new Intent(this,QR.class);
+        startActivity(intent);
     }
 
     private void openfaculty() {
