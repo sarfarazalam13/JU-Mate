@@ -6,11 +6,13 @@
     android:orientation="vertical"
     tools:context=".faculty">
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
         android:id="@+id/edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"/>
+        android:layout_margin="16dp"
+        android:minHeight="48dp"
+        android:hint="search....."/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

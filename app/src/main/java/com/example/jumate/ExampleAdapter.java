@@ -18,11 +18,13 @@ public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleV
     public static class ExampleViewHolder extends RecyclerView.ViewHolder {
         public ImageView mImageView;
         public TextView mTextView1;
+        public TextView mTexrView2;
 
         public ExampleViewHolder(View itemView) {
             super(itemView);
             mImageView = itemView.findViewById(R.id.img);
             mTextView1 = itemView.findViewById(R.id.facultyname);
+            mTexrView2=itemView.findViewById(R.id.facultyemail);
 
 
 
@@ -48,6 +50,7 @@ public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleV
 
         holder.mImageView.setImageResource(currentItem.getImageResource());
         holder.mTextView1.setText(currentItem.getText1());
+        holder.mTexrView2.setText(currentItem.getEmail());
     }
 
     @Override
