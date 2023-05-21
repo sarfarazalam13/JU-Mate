@@ -136,6 +136,8 @@ public class  academics extends AppCompatActivity implements View.OnClickListene
     }
 
     private void opennotice() {
+        Intent intent=new Intent(this,notice.class);
+        startActivity(intent);
 
     }
 
