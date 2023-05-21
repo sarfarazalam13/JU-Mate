@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.HorizontalScrollView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdate;
@@ -27,12 +30,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
     private ActivityMapsBinding binding;
-    Button food;
-    Button stationary;
-    Button grocery;
-    Button medical;
+    Button lt,lab,lt1,lab1;
+    TextView text;
     Polygon poly;
-    CheckBox clickabilityCheckbox;
+    HorizontalScrollView horizontalScrollView;
+    RelativeLayout relativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,102 +44,113 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        food=(Button)findViewById(R.id.food);
-        food.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openfood();
-            }
-        });
 
-
-        stationary=(Button)findViewById(R.id.stationary);
-        stationary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openstationary();
-            }
-        });
-
-        grocery=(Button)findViewById(R.id.grocery);
-        grocery.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                opengrocery();
-            }
-        });
-
-        medical=(Button)findViewById(R.id.medical);
-        medical.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openmedical();
-            }
-        });
-
+        horizontalScrollView=(HorizontalScrollView)findViewById(R.id.ltbutton);
+        horizontalScrollView.setVisibility(View.GONE);
+        horizontalScrollView=(HorizontalScrollView)findViewById(R.id.labbutton);
+        horizontalScrollView.setVisibility(View.GONE);
+        text=findViewById(R.id.locatdes);
+        text.setText("JU Mate");
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-    }
 
-    private void openmedical() {
 
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(3.0f));
-        LatLng JU = new LatLng(26.26077557134943, 73.93602207282825);
 
-        CameraUpdate cameraUpdate=CameraUpdateFactory.newLatLngZoom(JU,10);
-        mMap.addMarker(new MarkerOptions().position(JU).title("JU"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(JU));
-        mMap.animateCamera(cameraUpdate,3,new GoogleMap.CancelableCallback()
-        {
+        //Lts//////////////////////////////////////////////////////////////////
+        lt=(Button)findViewById(R.id.lts);
+        lt.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCancel() {
+            public void onClick(View v) {
+                horizontalScrollView=(HorizontalScrollView)findViewById(R.id.mainmenu);
+                horizontalScrollView.setVisibility(View.GONE);
+                horizontalScrollView=(HorizontalScrollView)findViewById(R.id.ltbutton);
+                horizontalScrollView.setVisibility(View.VISIBLE);
 
             }
-
-            @Override
-            public void onFinish() {
-
-            }
-
         });
-    }
 
-    private void opengrocery() {
-        LatLng JU = new LatLng(26.26077557134943, 73.93602207282825);
-        mMap.addMarker(new MarkerOptions().position(JU).title("JU"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(JU));
-    }
 
-    private void openstationary() {
-        LatLng JU = new LatLng(26.26077557134943, 73.93602207282825);
-        mMap.addMarker(new MarkerOptions().position(JU).title("JU"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(JU));
-    }
-
-    private void openfood() {
-
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(3.0f));
-        LatLng JU = new LatLng(26.7755530, 75.8776532);
-
-        CameraUpdate cameraUpdate=CameraUpdateFactory.newLatLngZoom(JU,24);
-        mMap.addMarker(new MarkerOptions().position(JU).title("Science Block Centre"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(JU));
-        mMap.animateCamera(cameraUpdate,3,new GoogleMap.CancelableCallback()
-        {
+        //LT 1
+        lt1=(Button)findViewById(R.id.lt1);
+        lt1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCancel() {
+            public void onClick(View v) {
+                text.setText("GF eng block");
+
+
+                mMap.animateCamera(CameraUpdateFactory.zoomTo(3.0f));
+                LatLng JU = new LatLng(26.7755530, 75.8776532);
+
+                CameraUpdate cameraUpdate=CameraUpdateFactory.newLatLngZoom(JU,24);
+                mMap.addMarker(new MarkerOptions().position(JU).title("Science Block Centre"));
+                mMap.moveCamera(CameraUpdateFactory.newLatLng(JU));
+                mMap.animateCamera(cameraUpdate,3,new GoogleMap.CancelableCallback()
+                {
+                    @Override
+                    public void onCancel() {
+
+                    }
+
+                    @Override
+                    public void onFinish() {
+
+                    }
+
+                });
 
             }
-
-            @Override
-            public void onFinish() {
-
-            }
-
         });
+
+
+        //LAbs//////////////////////////////////////////////////////
+        lab=(Button)findViewById(R.id.lab);
+        lab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                horizontalScrollView=(HorizontalScrollView)findViewById(R.id.mainmenu);
+                horizontalScrollView.setVisibility(View.GONE);
+                horizontalScrollView=(HorizontalScrollView)findViewById(R.id.labbutton);
+                horizontalScrollView.setVisibility(View.VISIBLE);
+
+            }
+        });
+
+
+        lab1=(Button)findViewById(R.id.lab1);
+        lab1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mMap.animateCamera(CameraUpdateFactory.zoomTo(3.0f));
+                LatLng JU = new LatLng(26.7755530, 75.8776532);
+
+                CameraUpdate cameraUpdate=CameraUpdateFactory.newLatLngZoom(JU,24);
+                mMap.addMarker(new MarkerOptions().position(JU).title("Science Block Centre"));
+                mMap.moveCamera(CameraUpdateFactory.newLatLng(JU));
+                mMap.animateCamera(cameraUpdate,3,new GoogleMap.CancelableCallback()
+                {
+                    @Override
+                    public void onCancel() {
+
+                    }
+
+                    @Override
+                    public void onFinish() {
+
+                    }
+
+                });
+
+            }
+        });
+
+
+
     }
+
+
+
 
     /**
      * Manipulates the map once available.
