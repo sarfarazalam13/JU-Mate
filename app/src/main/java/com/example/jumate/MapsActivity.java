@@ -19,6 +19,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.internal.ICameraUpdateFactoryDelegate;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -30,7 +31,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
     private ActivityMapsBinding binding;
-    Button lt,lab,lt1,lab1;
+    Button lt,lab,lt1,lab1,lab2;
     TextView text;
     Polygon poly;
     HorizontalScrollView horizontalScrollView;
@@ -72,7 +73,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         });
 
 
-        //LT 1
+        //LT 1///////////////////////////////////////////////////////////////
         lt1=(Button)findViewById(R.id.lt1);
         lt1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,7 +87,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 CameraUpdate cameraUpdate=CameraUpdateFactory.newLatLngZoom(JU,24);
                 mMap.addMarker(new MarkerOptions().position(JU).title("Science Block Centre"));
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(JU));
-                mMap.animateCamera(cameraUpdate,3,new GoogleMap.CancelableCallback()
+                mMap.animateCamera(cameraUpdate,1500,new GoogleMap.CancelableCallback()
                 {
                     @Override
                     public void onCancel() {
@@ -104,7 +105,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         });
 
 
-        //LAbs//////////////////////////////////////////////////////
+        //Labs//////////////////////////////////////////////////////
         lab=(Button)findViewById(R.id.lab);
         lab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,7 +129,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 CameraUpdate cameraUpdate=CameraUpdateFactory.newLatLngZoom(JU,24);
                 mMap.addMarker(new MarkerOptions().position(JU).title("Science Block Centre"));
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(JU));
-                mMap.animateCamera(cameraUpdate,3,new GoogleMap.CancelableCallback()
+                mMap.animateCamera(cameraUpdate,1500,new GoogleMap.CancelableCallback()
                 {
                     @Override
                     public void onCancel() {
@@ -144,6 +145,37 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             }
         });
+        lab2=(Button)findViewById(R.id.lab2);
+        lab2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                LatLng JU = new LatLng(26.7758883, 75.8758176);
+
+                CameraUpdate cameraUpdate=CameraUpdateFactory.zoomTo(24);
+                mMap.addMarker(new MarkerOptions().position(JU).title("Science Block Centre"));
+                mMap.moveCamera(CameraUpdateFactory.newLatLng(JU));
+                mMap.animateCamera(cameraUpdate,1500,new GoogleMap.CancelableCallback()
+                {
+                    @Override
+                    public void onCancel() {
+
+                    }
+
+                    @Override
+                    public void onFinish() {
+
+                    }
+
+                });
+
+            }
+
+
+        });
+
+
 
 
 
@@ -173,11 +205,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.animateCamera(CameraUpdateFactory.zoomTo(3.0f));
         LatLng JU = new LatLng(26.77634815034388, 75.87748599748012);
 
-        CameraUpdate cameraUpdate=CameraUpdateFactory.newLatLngZoom(JU,17);
+        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(JU, 17);
         mMap.addMarker(new MarkerOptions().position(JU).title("JU"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(JU));
-        mMap.animateCamera(cameraUpdate,3,new GoogleMap.CancelableCallback()
-        {
+        mMap.animateCamera(cameraUpdate, 1500, new GoogleMap.CancelableCallback() {
             @Override
             public void onCancel() {
 
@@ -191,17 +222,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         });
 
         //circle
-        LatLng Sciencecentre=new LatLng(26.7755530, 75.8776532);
+
+        LatLng Sciencecentre = new LatLng(26.7755530, 75.8776532);
         mMap.addCircle(new CircleOptions().center(Sciencecentre).radius(5).fillColor(Color.GREEN).strokeColor(Color.GRAY));
         //Lt 14,9 square
         mMap.addPolygon(new PolygonOptions().add(new LatLng(26.7756901, 75.8774577),
                 new LatLng(26.7756994, 75.8775727),
-        new LatLng(26.7756228, 75.8775805),
-        new LatLng(26.7756135, 75.8774658),
-        new LatLng(26.7756901, 75.8774577)).fillColor(Color.RED).strokeColor(Color.GRAY));
+                new LatLng(26.7756228, 75.8775805),
+                new LatLng(26.7756135, 75.8774658),
+                new LatLng(26.7756901, 75.8774577)).fillColor(Color.RED).strokeColor(Color.GRAY));
+
+
 
         //LT 4,6,19,23
-        poly=mMap.addPolygon(new PolygonOptions().add(new LatLng(26.7756901, 75.8774577),
+        mMap.addPolygon(new PolygonOptions().add(new LatLng(26.7756901, 75.8774577),
                 new LatLng(26.7756994, 75.8775727),
                 new LatLng(26.7756228, 75.8775805),
                 new LatLng(26.7756135, 75.8774658),
