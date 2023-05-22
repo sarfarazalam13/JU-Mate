@@ -30,18 +30,63 @@ public class merchandisesection2 extends AppCompatActivity {
         if (item != null) {
             switch (item) {
                 case "0":
-                    imageView.setImageResource(R.drawable.blank);
-                    title.setText("Item 1");
+                    imageView.setImageResource(R.drawable.tshirt1);
+                    title.setText("T-shirt");
                     price.setText("Rs 61,000");
                     // Set image and rating as needed
                     break;
                 case "1":
-                    title.setText("Item 2");
+                    imageView.setImageResource(R.drawable.tshirt2);
+                    title.setText("Hoodie Black");
                     price.setText("Rs 45,000");
                     // Set image and rating as needed
                     break;
                 case "2":
-                    title.setText("Item 3");
+                    imageView.setImageResource(R.drawable.tshirt3);
+                    title.setText("JU T-shirt");
+                    price.setText("Rs 82,000");
+                    // Set image and rating as needed
+                    break;
+                case "3":
+                    imageView.setImageResource(R.drawable.tshirt6);
+                    title.setText("Hoodie RED");
+                    price.setText("Rs 82,000");
+                    // Set image and rating as needed
+                    break;
+                case "4":
+                    imageView.setImageResource(R.drawable.tshirt5);
+                    title.setText("Hoodie");
+                    price.setText("Rs 82,000");
+                    // Set image and rating as needed
+                    break;
+                case "5":
+                    imageView.setImageResource(R.drawable.tshirtmerch);
+                    title.setText("Black design T-shirt");
+                    price.setText("Rs 82,000");
+                    // Set image and rating as needed
+                    break;
+                case "6":
+                    imageView.setImageResource(R.drawable.hoodie);
+                    title.setText("Plain White Hoodie");
+                    price.setText("Rs 82,000");
+                    // Set image and rating as needed
+                    break;
+                case "7":
+                    imageView.setImageResource(R.drawable.tshirt4);
+                    title.setText("Navy Blue Hoodie");
+                    price.setText("Rs 82,000");
+                    // Set image and rating as needed
+                    break;
+
+                case "8":
+                    imageView.setImageResource(R.drawable.shoes);
+                    title.setText("Shoes");
+                    price.setText("Rs 82,000");
+                    // Set image and rating as needed
+                    break;
+                case "9":
+                    imageView.setImageResource(R.drawable.cap);
+                    title.setText("Cap");
                     price.setText("Rs 82,000");
                     // Set image and rating as needed
                     break;
