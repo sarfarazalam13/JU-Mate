@@ -68,30 +68,30 @@ public class ParentRecyclerViewAdapter extends RecyclerView.Adapter<ParentRecycl
         // added in second child row
         if (parentModelArrayList.get(position).movieCategory().equals("Civil")) {
             arrayList.add(new ChildModel(R.drawable.blank,"Electronics"));
-            arrayList.add(new ChildModel(R.drawable.blank,"physics"));
-            arrayList.add(new ChildModel( R.drawable.blank,"CAD"));
+            arrayList.add(new ChildModel(R.drawable.physics,"physics"));
+            arrayList.add(new ChildModel( R.drawable.cad,"CAD"));
             arrayList.add(new ChildModel( R.drawable.blank,"Chemistry"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Mechanics"));
-            arrayList.add(new ChildModel( R.drawable.blank,"physics"));
+            arrayList.add(new ChildModel( R.drawable.machinemechanics,"Mechanics"));
+            arrayList.add(new ChildModel( R.drawable.design,"physics"));
         }
 
         // added in third child row
         if (parentModelArrayList.get(position).movieCategory().equals("Mechanical")) {
-            arrayList.add(new ChildModel(R.drawable.blank,"Fluid Machinery"));
-            arrayList.add(new ChildModel(R.drawable.blank,"heat transfer"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Machine Drawing"));
-            arrayList.add(new ChildModel( R.drawable.blank,"workshop"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Robotics"));
-            arrayList.add(new ChildModel( R.drawable.blank,"CAD"));
+            arrayList.add(new ChildModel(R.drawable.fluids,"Fluid Machinery"));
+            arrayList.add(new ChildModel(R.drawable.heattransfer,"heat transfer"));
+            arrayList.add(new ChildModel( R.drawable.graphics,"Machine Drawing"));
+            arrayList.add(new ChildModel( R.drawable.mechine,"workshop"));
+            arrayList.add(new ChildModel( R.drawable.robotics,"Robotics"));
+            arrayList.add(new ChildModel( R.drawable.cad,"CAD"));
         }
 
         // added in fourth child row
         if (parentModelArrayList.get(position).movieCategory().equals("Electrical")) {
-            arrayList.add(new ChildModel(R.drawable.blank,"Electromechanics."));
+            arrayList.add(new ChildModel(R.drawable.circuit,"Electromechanics."));
             arrayList.add(new ChildModel(R.drawable.blank,"Circuit Theory"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Physical Electronics"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Computer Vision"));
-            arrayList.add(new ChildModel( R.drawable.blank,"Soft Computing"));
+            arrayList.add(new ChildModel( R.drawable.physicalelectronics,"Physical Electronics"));
+            arrayList.add(new ChildModel( R.drawable.computervision,"Computer Vision"));
+            arrayList.add(new ChildModel( R.drawable.graphics,"Soft Computing"));
             arrayList.add(new ChildModel( R.drawable.blank,"VLSI Technology"));
         }
 
