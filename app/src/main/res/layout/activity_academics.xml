@@ -23,7 +23,8 @@
               <androidx.appcompat.widget.Toolbar
                   android:id="@+id/academicstoolbar"
                   android:layout_width="match_parent"
-                  android:layout_height="wrap_content">
+                  android:layout_height="wrap_content"
+                  android:background="#FB152E">
 
 
               </androidx.appcompat.widget.Toolbar>
@@ -195,7 +196,8 @@
                 android:minHeight="48dp"
                 android:text="Parents Portal"
                 android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
 
         </GridLayout>

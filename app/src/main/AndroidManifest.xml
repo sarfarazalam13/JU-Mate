@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -28,6 +29,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JUMate"
         tools:targetApi="31">
+        <activity
+            android:name=".devs"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".merchandisesection2"
             android:exported="false">

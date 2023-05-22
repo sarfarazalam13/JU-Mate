@@ -22,6 +22,7 @@ import com.google.android.gms.maps.internal.ICameraUpdateFactoryDelegate;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.jumate.databinding.ActivityMapsBinding;
 import com.google.android.gms.maps.model.Polygon;
@@ -202,10 +203,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.setLatLngBoundsForCameraTarget(new LatLngBounds(
+                new LatLng(26.770639, 75.870437), // Southwest bound
+                new LatLng(26.778405, 75.884486) // Northeast bound
+        ));
+        mMap.setMinZoomPreference(15.0f);
+        mMap.setMaxZoomPreference(30.0f);
         mMap.animateCamera(CameraUpdateFactory.zoomTo(3.0f));
         LatLng JU = new LatLng(26.77634815034388, 75.87748599748012);
 
-        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(JU, 17);
+
+        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(JU, 19);
         mMap.addMarker(new MarkerOptions().position(JU).title("JU"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(JU));
         mMap.animateCamera(cameraUpdate, 1500, new GoogleMap.CancelableCallback() {
